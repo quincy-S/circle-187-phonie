@@ -1,16 +1,44 @@
 function startApp() {
-    // Your entire app should not necessarily be coded inside this 
-    // single function (though there's no penalty for that), 
-    // so create and use/call additional functions from here
+    let burger = document.querySelector(".burger-menu")
+  let navlinks = document.querySelector(".nav-links")
+  let menuOpen = false
+  let popup = document.querySelector(".popup")
+  let popupOpen = false
+  let button1 = document.querySelector(".nav-button")
+  let button2 = document.querySelector(".main-button")
   
-    // pls remove the below and make some magic in here!
-    console.log('make magic in here!');
+  button1.addEventListener("click",()=>{
+      if(!popupOpen){
+          popup.classList.add("active")
+          popupOpen = true
+      }
+      else{
+          popup.classList.remove("active")
+          popupOpen=false
+  }})
   
-    const header = document.querySelector('h2');
-    if(header) {
-      header.textContent = 'make some magic here!!';
-    }
-  };
+  button2.addEventListener("click",()=>{
+      if(!popupOpen){
+          popup.classList.add("active")
+          popupOpen = true
+      }
+      else{
+          popup.classList.remove("active")
+          popupOpen=false
+  }})
+  
+  burger.addEventListener("click", () => {
+      if(!menuOpen){
+          burger.classList.add("open")
+          navlinks.classList.add("active")
+          menuOpen = true
+      }else{
+          burger.classList.remove("open")
+          navlinks.classList.remove("active")
+          menuOpen=false
+      }
+  })
+};
   
   // ======= DO NOT EDIT ============== //
   export default startApp;

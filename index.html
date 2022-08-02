@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+    <title>Phonie</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h2>make some magic here!!</h2>
+    <nav>
+        <div class="burger-menu">
+            <div class="burger-bar"></div>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Products</a></li>
+                <li><a>Services</a></li>
+                <li><a>About</a></li>
+            </ul>
+        </div>
+        <div class="nav-items">
+            <div>
+                <img src="Vector (1).png">
+                <span>+2347066455482</span>
+            </div>
+            <div>
+                <img src="Vector.png"/>
+                <span>info@circle-187.com</span>
+            </div>
+            <button class="nav-button">
+                Link your NIN
+            </button>
+        </div>
+        <div class="popup">
+            <div class="logo-div">
+                <img class="telco-logo"/>
+            </div>
+            
+            <div>
+                <p>
+                You can submit your NIN for each of your lines by
+                any network provide in Nigeria, including your
+                Broadband MiFi & Broadband Router.
+                </p>
+            </div>
+            <form action="#">
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <datalist id="countries">
+                        <option value="+233">
+                        <option value="+234">
+                    </datalist>
+                    <input name="phone" list = "countries" required>
+                    
+                </div>
+                <div class="input-box">
+                    <span class="details">National Identity Number [NIN]</span>
+                    <input name="NIN" required> 
+                </div>
+                <div class="input-box">
+                    <span class="details">Email Address</span>
+                    <input name="email" required>
+                </div>
+                  
+                
+                <div class="popup-buttons">
+                    <button class="submit">Submit</button>
+                    <button class="back">Back</button>
+                </div> 
+                <p class="warning">
+                    Note: Remember to enter the correct NIN number above!
+                    If you do not have a NIN yet, visit the NIN enrolment 
+                    location nearest to you 
+                </p>            
+            </form>
+        </div>   
+    </nav>
+    <div class="nav-links-2">
+        <img src="Group 33.jpg" class="logo"/>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>Products</a></li>
+            <li><a>Services</a></li>
+            <li><a>About</a></li>
+        </ul>
+    </div>
+    <main>
+        <div>
+            <h2>Fast & Hassle Free</h2>
+            <h1>One-Stop-Shop to <span>link</span>
+                Your <span>NIN</span> with your 
+                number
+            </h1>
+            <p>Quickest way to link your NIN with your number.</p>
+            <p>No need to worry about your network provider, we already got you covered.</p>
+            <button class="main-button">Link your NIN</button>
+        </div>   
+    </main>
+    <div class="main-img-div">
+        <img class="main-img"src="t-shirt-mockup-of-an-excited-man-traveling-m21967-r-el2-removebg-preview 1.png"
+        alt="human-img"/>
+    </div>
+    <footer>
+        <p>All rights reserved. Powered by Circle-187</p>
+    </footer>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
