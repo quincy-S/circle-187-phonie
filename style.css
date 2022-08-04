@@ -107,7 +107,6 @@ nav{
   left:0px;
   height:100vh;
   top:0;
-  display: flex;
   flex-direction: column;
   align-items: left;
   background-color: white;
@@ -119,6 +118,11 @@ nav{
 
 .nav-links-2{
     display: none;
+}
+
+.telco-logo{
+    width:100%;
+    height: auto;
 }
 
 .nav-items{
@@ -200,7 +204,7 @@ nav{
 }
 
 .logo-div{
-    border:2px solid red;
+
     width:60px;
     height: 60px;
     margin:0 auto;
